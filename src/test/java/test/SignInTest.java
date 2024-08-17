@@ -29,6 +29,9 @@ public class SignInTest extends ProjectSpecificationMethod {
 	@Test(dataProvider = "ReadfromExcel")
 	public void TS_002_SignInTest(String emailID, String password, String testCaseID) throws IOException {
 		// TODO Auto-generated method stub
+//		System.out.println("The email ID is: "+ emailID);
+//		System.out.println("The email password is: "+ password);
+		
 		SignInPage obj = new SignInPage(driver);
 		obj.emailID(emailID).password(password).signInButton();
 
@@ -166,7 +169,10 @@ public class SignInTest extends ProjectSpecificationMethod {
 			WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(10));
 			WebElement passError = wait.until(ExpectedConditions.visibilityOfElementLocated(
 					By.xpath("//div[contains(text(),'Password is required.')]")));
-			String actualPassError = emailError.getText();
+			String actualPassError = passError.getText();
+			
+//			System.out.println("------"+actualPassError+"------");
+//			System.out.println("------"+actualEmailError+"------");
 			
 			if (expectedEmailError.equals(actualEmailError) && expectedPassError.equals(actualPassError)) {
 				extentTest.pass("The user SignIn test case " + testCaseID + " passed");

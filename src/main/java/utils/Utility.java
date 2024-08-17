@@ -110,7 +110,7 @@ public class Utility {
 			for (int j = 0; j < columnCount; j++) {
 				XSSFCell cell = row.getCell(j);
 				if(cell == null) {
-				data[i-1][j] = " ";	
+				data[i-1][j] = "";	
 				}else {
 				data[i - 1][j] = cell.getStringCellValue();	
 				}

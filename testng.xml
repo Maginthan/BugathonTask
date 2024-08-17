@@ -5,10 +5,10 @@
 		<parameter name="browser" value="Chrome"></parameter>
 		<parameter name="url" value="https://app.hyrenet.in/"></parameter>
 		<classes>
-			<!-- <class name="test.BrokenURLValidationTest"></class>-->
-			<!--class name="test.SignInTest"></class> -->
-			<!--<class name="test.SignUpTest"></class> -->
-			<!--<class name="test.LogoutTest"></class> -->
+			 <class name="test.BrokenURLValidationTest"></class>
+			<class name="test.SignInTest"></class>
+			<class name="test.SignUpTest"></class>
+			<class name="test.LogoutTest"></class>
 			<class name="test.TemplateCreationTest"></class>
 		</classes>
 	</test> 

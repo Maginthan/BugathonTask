@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.LogoutTest">
+      <class name="test.SignUpTest">
         <methods>
-          <include name="TC_008_SignUnTest"/>
           <include name="browserClose"/>
-          <include name="fileSetup"/>
+          <include name="TS_004_SignUpTest"/>
           <include name="browserLaunch"/>
+          <include name="fileSetup"/>
           <include name="createExtentTest"/>
           <include name="generateExtentReports"/>
           <include name="reportInitialisation"/>
         </methods>
-      </class> <!-- test.LogoutTest -->
+      </class> <!-- test.SignUpTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -31,20 +31,21 @@ public class SignUpTest extends ProjectSpecificationMethod{
 		SignInPage obj = new SignInPage(driver);
 		obj.clickSignUp().workEmail(workEmailID).continueButton();
 		
-		if(workEmailID.equals("TC_008_SignUpTest")) {
+		if(testCase_ID.equals("TC_008_SignUpTest")) {
 			String expectedError = "Enter valid E-mail.";
 			// Passing info the extent report for test case
-			extentTest.info("Verifying the SignUp scneario with test case " + "-" + testCase_ID);
+			extentTest.info("Verifying the SignUp scenario with test case " + "-" + testCase_ID);
 			try {
-				// Explicit wait for the dashboard page to appear
+				// Explicit wait for the error to appear
 				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-				WebElement ele = wait.until(
-						ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Enter valid E-mail.')]")));
-				String actualError = ele.getText();
+				WebElement ele1 = wait.until(
+						ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Enter valid E-mail.')]")));
+				String actualError = ele1.getText();
 
 				if (expectedError.equals(actualError)) {
 					extentTest.pass("The user SignUp test case " + testCase_ID + " passed");
 				} else {
+					System.out.println("failed in case TC008");
 					// Calling public method to take screenshot
 					filePath = takeScreenshot(testCase_ID);
 					// Calling method the to capture screenshot from path
@@ -53,6 +54,7 @@ public class SignUpTest extends ProjectSpecificationMethod{
 				}
 
 			} catch (Exception e) {
+				System.out.println("Exception in case TC008");
 				// Calling public method to take screenshot
 				filePath = takeScreenshot(testCase_ID);
 				// Calling method the to capture screenshot from path
@@ -63,17 +65,18 @@ public class SignUpTest extends ProjectSpecificationMethod{
 		}else if(testCase_ID.equals("TC_009_SignUpTest")) {
 			String expectedError = "Enter valid work email";
 			// Passing info the extent report for test case
-			extentTest.info("Verifying the SignUp scneario with test case " + "-" + testCase_ID);
+			extentTest.info("Verifying the SignUp scenario with test case " + "-" + testCase_ID);
 			try {
 				// Explicit wait for the dashboard page to appear
 				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-				WebElement ele = wait.until(
-						ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[contains(text(),'Enter valid work email')]")));
-				String actualError = ele.getText();
+				WebElement ele2 = wait.until(
+						ExpectedConditions.presenceOfElementLocated(By.xpath("//p[contains(text(),'Enter valid work email')]")));
+				String actualError = ele2.getText();
 
 				if (expectedError.equals(actualError)) {
 					extentTest.pass("The user SignUp test case " + testCase_ID + " passed");
 				} else {
+					System.out.println("failed in case TC009");
 					// Calling public method to take screenshot
 					filePath = takeScreenshot(testCase_ID);
 					// Calling method the to capture screenshot from path
@@ -82,6 +85,7 @@ public class SignUpTest extends ProjectSpecificationMethod{
 				}
 
 			} catch (Exception e) {
+				System.out.println("Exception in case TC009");
 				// Calling public method to take screenshot
 				filePath = takeScreenshot(testCase_ID);
 				// Calling method the to capture screenshot from path
@@ -96,13 +100,14 @@ public class SignUpTest extends ProjectSpecificationMethod{
 			try {
 				// Explicit wait for the dashboard page to appear
 				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-				WebElement ele = wait.until(
-						ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'E-mail is required.')]")));
-				String actualError = ele.getText();
+				WebElement ele3 = wait.until(
+						ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'E-mail is required.')]")));
+				String actualError = ele3.getText();
 
 				if (expectedError.equals(actualError)) {
 					extentTest.pass("The user SignUp test case " + testCase_ID + " passed");
 				} else {
+					System.out.println("failed in case TC010");
 					// Calling public method to take screenshot
 					filePath = takeScreenshot(testCase_ID);
 					// Calling method the to capture screenshot from path
@@ -112,6 +117,7 @@ public class SignUpTest extends ProjectSpecificationMethod{
 
 			} catch (Exception e) {
 				// Calling public method to take screenshot
+				System.out.println("Exception in case TC010");
 				filePath = takeScreenshot(testCase_ID);
 				// Calling method the to capture screenshot from path
 				extentTest.addScreenCaptureFromPath(filePath, testCase_ID);
