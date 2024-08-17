@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="https://app.hyrenet.in/"/>
+    <classes>
+      <class name="test.TemplateCreationTest">
+        <methods>
+          <include name="fileSetup"/>
+          <include name="browserClose"/>
+          <include name="browserLaunch"/>
+          <include name="createExtentTest"/>
+          <include name="generateExtentReports"/>
+          <include name="TC_011_TemplateCreation"/>
+          <include name="reportInitialisation"/>
+        </methods>
+      </class> <!-- test.TemplateCreationTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
