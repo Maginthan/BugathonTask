@@ -1,8 +1,7 @@
 package pages;
 
+import java.io.IOException;
 import java.time.Duration;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,7 +31,17 @@ public class CreateTemplatePage extends ProjectSpecificationMethod{
 	
 	@FindBy(xpath = "//button[contains(@class,'custom-btn custom-btn--primary')][@id='step1-submit']")
 	WebElement saveAndContinue;
-
+	
+	@FindBy(xpath = "//div[@class='option'][@data-value='Full stack developer']")
+	WebElement selectRole;
+	
+	@FindBy(xpath = "//div[@class='option'][@data-value='programming']")
+	WebElement selectPlan;
+	
+	@FindBy(xpath = "//div[@class='option'][@data-value='java8']")
+	WebElement selectLanguage;
+	
+	
 	public CreateTemplatePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -42,15 +51,15 @@ public class CreateTemplatePage extends ProjectSpecificationMethod{
 	public CreateTemplatePage enterRole() {
 		enterRole.click();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement ele = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='option'][@data-value='Full stack developer']")));
+		WebElement ele = wait.until(ExpectedConditions.visibilityOf(selectRole));
 		ele.click();
 		return this;
 	}
 	
 	//Public method to click and enter template name
-	public CreateTemplatePage enterTemplateName() {
+	public CreateTemplatePage enterTemplateName() throws IOException {
 		tempName.click();
-		tempName.sendKeys("Maginthan");
+		tempName.sendKeys(getPropertyValue("templateName"));
 		return this;
 	}
 	
@@ -58,17 +67,17 @@ public class CreateTemplatePage extends ProjectSpecificationMethod{
 	public CreateTemplatePage enterTemplatePlan() {
 		tempPlan.click();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement ele = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='option'][@data-value='programming']")));
+		WebElement ele = wait.until(ExpectedConditions.visibilityOf(selectPlan));
 		ele.click();
 		return this;
 	}
 	
 	//Public method to click and enter duration
 	public CreateTemplatePage enterDuration() {
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//		WebElement ele = wait.until(ExpectedConditions.visibilityOfElementLocated(""));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(duration));
 		duration.click();
-		duration.sendKeys("10");
+		duration.sendKeys(randomTestDuration());
 		return this;
 	}
 	
@@ -76,7 +85,7 @@ public class CreateTemplatePage extends ProjectSpecificationMethod{
 	public CreateTemplatePage enterLanguage() {
 		language.click();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement ele = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='option'][@data-value='java8']")));
+		WebElement ele = wait.until(ExpectedConditions.visibilityOf(selectLanguage));
 		ele.click();
 		return this;
 	} 

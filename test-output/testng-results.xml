@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-18T02:41:04 IST" name="Suite" finished-at="2024-08-18T02:41:18 IST" duration-ms="13817">
+  <suite started-at="2024-08-19T15:00:49 IST" name="Suite" finished-at="2024-08-19T15:01:06 IST" duration-ms="16229">
     <groups>
     </groups>
-    <test started-at="2024-08-18T02:41:04 IST" name="Test" finished-at="2024-08-18T02:41:18 IST" duration-ms="13817">
-      <class name="test.TemplateCreationTest">
-        <test-method is-config="true" signature="reportInitialisation()[pri:0, instance:test.TemplateCreationTest@79e4c792]" started-at="2024-08-18T02:41:04 IST" name="reportInitialisation" finished-at="2024-08-18T02:41:04 IST" duration-ms="233" status="PASS">
+    <test started-at="2024-08-19T15:00:49 IST" name="Test" finished-at="2024-08-19T15:01:06 IST" duration-ms="16229">
+      <class name="test.UpadateEndPageTest">
+        <test-method is-config="true" signature="reportInitialisation()[pri:0, instance:test.UpadateEndPageTest@15043a2f]" started-at="2024-08-19T15:00:49 IST" name="reportInitialisation" finished-at="2024-08-19T15:00:49 IST" duration-ms="244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportInitialisation -->
-        <test-method is-config="true" signature="fileSetup()[pri:0, instance:test.TemplateCreationTest@79e4c792]" started-at="2024-08-18T02:41:04 IST" name="fileSetup" finished-at="2024-08-18T02:41:04 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="fileSetup()[pri:0, instance:test.UpadateEndPageTest@15043a2f]" started-at="2024-08-19T15:00:49 IST" name="fileSetup" finished-at="2024-08-19T15:00:49 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fileSetup -->
-        <test-method is-config="true" signature="createExtentTest()[pri:0, instance:test.TemplateCreationTest@79e4c792]" started-at="2024-08-18T02:41:04 IST" name="createExtentTest" finished-at="2024-08-18T02:41:04 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="createExtentTest()[pri:0, instance:test.UpadateEndPageTest@15043a2f]" started-at="2024-08-19T15:00:49 IST" name="createExtentTest" finished-at="2024-08-19T15:00:49 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.TemplateCreationTest@79e4c792]" started-at="2024-08-18T02:41:04 IST" name="browserLaunch" finished-at="2024-08-18T02:41:10 IST" duration-ms="5933" status="PASS">
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.UpadateEndPageTest@15043a2f]" started-at="2024-08-19T15:00:49 IST" name="browserLaunch" finished-at="2024-08-19T15:01:01 IST" duration-ms="12021" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,19 +35,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunch -->
-        <test-method signature="TC_011_TemplateCreation()[pri:0, instance:test.TemplateCreationTest@79e4c792]" started-at="2024-08-18T02:41:10 IST" name="TC_011_TemplateCreation" finished-at="2024-08-18T02:41:18 IST" duration-ms="7647" status="PASS">
+        <test-method signature="TC_014_UpadateEndPageDetails()[pri:0, instance:test.UpadateEndPageTest@15043a2f]" started-at="2024-08-19T15:01:01 IST" name="TC_014_UpadateEndPageDetails" finished-at="2024-08-19T15:01:06 IST" duration-ms="4172" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_011_TemplateCreation -->
-        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.TemplateCreationTest@79e4c792]" started-at="2024-08-18T02:41:18 IST" name="browserClose" finished-at="2024-08-18T02:41:18 IST" duration-ms="201" status="PASS">
+        </test-method> <!-- TC_014_UpadateEndPageDetails -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.UpadateEndPageTest@15043a2f]" started-at="2024-08-19T15:01:06 IST" name="browserClose" finished-at="2024-08-19T15:01:06 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
-        <test-method is-config="true" signature="generateExtentReports()[pri:0, instance:test.TemplateCreationTest@79e4c792]" started-at="2024-08-18T02:41:18 IST" name="generateExtentReports" finished-at="2024-08-18T02:41:19 IST" duration-ms="255" status="PASS">
+        <test-method is-config="true" signature="generateExtentReports()[pri:0, instance:test.UpadateEndPageTest@15043a2f]" started-at="2024-08-19T15:01:06 IST" name="generateExtentReports" finished-at="2024-08-19T15:01:06 IST" duration-ms="251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateExtentReports -->
-      </class> <!-- test.TemplateCreationTest -->
+      </class> <!-- test.UpadateEndPageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

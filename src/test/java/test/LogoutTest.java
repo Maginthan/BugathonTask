@@ -29,7 +29,7 @@ public class LogoutTest extends ProjectSpecificationMethod{
 		extentTest.info("Verifying the user log out test case " + "-" + testName);
 		try {
 			SignInPage obj = new SignInPage(driver);
-			obj.emailID("hyrenet+bugathon@guvi.in").password("hyrenettest@123").signInButton()
+			obj.emailID(getPropertyValue("emailID")).password(getPropertyValue("password")).signInButton()
 			.settingsModule();
 			
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -54,7 +54,7 @@ public class LogoutTest extends ProjectSpecificationMethod{
 			filePath = takeScreenshot(testName);
 			// Calling method the to capture screenshot from path
 			extentTest.addScreenCaptureFromPath(filePath, testName);
-			extentTest.fail("The user log out test case " + testName + " failed");
+			extentTest.fail("The user log out test case " + testName + " failed due to exception "+ e.getMessage());
 			e.printStackTrace();
 		}
 

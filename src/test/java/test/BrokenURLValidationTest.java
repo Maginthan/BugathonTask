@@ -24,7 +24,7 @@ public class BrokenURLValidationTest extends ProjectSpecificationMethod{
 	public void TC_001_URLValidation(String url) throws IOException {
 		
 		// Passing info the extent report for test case
-		extentTest.info("Verifying the URL is broken or not");
+		extentTest.info("Verifying the Broken URL Screnario");
 		try {
 			
 			URL link = new URL(url);
@@ -34,9 +34,7 @@ public class BrokenURLValidationTest extends ProjectSpecificationMethod{
 			httpURLConnection.connect();
 
 			String actualResult = String.valueOf(httpURLConnection.getResponseCode());
-			String expectedResult = "200";
 			
-			extentTest.info("Expected response is  "+ "200");
 			extentTest.info("Actual response is "+ actualResult);
 			
 			if (httpURLConnection.getResponseCode() == 200) {
@@ -54,7 +52,7 @@ public class BrokenURLValidationTest extends ProjectSpecificationMethod{
 			filePath = takeScreenshot(testName);
 			// Calling method the to capture screenshot from path
 			extentTest.addScreenCaptureFromPath(filePath, testName);
-			extentTest.fail("Exception occured during the test case validation"+ " - " + e.getMessage());
+			extentTest.fail("The URL Broken testcase "+testName+ " failed due to exception " + e.getMessage());
 			e.printStackTrace();
 		}
 	}

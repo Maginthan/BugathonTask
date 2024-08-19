@@ -7,7 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -63,7 +62,7 @@ public class SignInTest extends ProjectSpecificationMethod {
 				filePath = takeScreenshot(testCaseID);
 				// Calling method the to capture screenshot from path
 				extentTest.addScreenCaptureFromPath(filePath, testCaseID);
-				extentTest.fail("The user SignIn test case " + testCaseID + " failed");
+				extentTest.fail("The user SignIn test case " + testCaseID + " failed due to exception"+ e.getMessage());
 				e.printStackTrace();
 			}
 		} else if (testCaseID.equals("TC_003_SignInTest")) {
@@ -92,7 +91,7 @@ public class SignInTest extends ProjectSpecificationMethod {
 				filePath = takeScreenshot(testCaseID);
 				// Calling method the to capture screenshot from path
 				extentTest.addScreenCaptureFromPath(filePath, testCaseID);
-				extentTest.fail("The user SignIn test case " + testCaseID + " failed");
+				extentTest.fail("The user SignIn test case " + testCaseID + " failed due to exception"+ e.getMessage());
 				e.printStackTrace();
 			}
 		} else if (testCaseID.equals("TC_004_SignInTest")) {
@@ -121,7 +120,7 @@ public class SignInTest extends ProjectSpecificationMethod {
 				filePath = takeScreenshot(testCaseID);
 				// Calling method the to capture screenshot from path
 				extentTest.addScreenCaptureFromPath(filePath, testCaseID);
-				extentTest.fail("The user SignIn test case " + testCaseID + " failed");
+				extentTest.fail("The user SignIn test case " + testCaseID + " failed due to exception"+ e.getMessage());
 				e.printStackTrace();
 			}
 		}else if (testCaseID.equals("TC_005_SignInTest")) {
@@ -150,7 +149,7 @@ public class SignInTest extends ProjectSpecificationMethod {
 				filePath = takeScreenshot(testCaseID);
 				// Calling method the to capture screenshot from path
 				extentTest.addScreenCaptureFromPath(filePath, testCaseID);
-				extentTest.fail("The user SignIn test case " + testCaseID + " failed");
+				extentTest.fail("The user SignIn test case " + testCaseID + " failed due to exception"+ e.getMessage());
 				e.printStackTrace();
 			}
 	}else {
@@ -167,7 +166,7 @@ public class SignInTest extends ProjectSpecificationMethod {
 			String actualEmailError = emailError.getText();
 			
 			WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(10));
-			WebElement passError = wait.until(ExpectedConditions.visibilityOfElementLocated(
+			WebElement passError = wait2.until(ExpectedConditions.visibilityOfElementLocated(
 					By.xpath("//div[contains(text(),'Password is required.')]")));
 			String actualPassError = passError.getText();
 			
@@ -188,7 +187,7 @@ public class SignInTest extends ProjectSpecificationMethod {
 			filePath = takeScreenshot(testCaseID);
 			// Calling method the to capture screenshot from path
 			extentTest.addScreenCaptureFromPath(filePath, testCaseID);
-			extentTest.fail("The user SignIn test case " + testCaseID + " failed");
+			extentTest.fail("The user SignIn test case " + testCaseID + " failed due to exception"+ e.getMessage());
 			e.printStackTrace();
 		}
 	}

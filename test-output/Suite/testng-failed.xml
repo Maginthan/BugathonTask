@@ -5,17 +5,17 @@
     <parameter name="browser" value="Chrome"/>
     <parameter name="url" value="https://app.hyrenet.in/"/>
     <classes>
-      <class name="test.TemplateCreationTest">
+      <class name="test.DriveCreationTest">
         <methods>
-          <include name="fileSetup"/>
           <include name="browserClose"/>
+          <include name="TC_012_TemplateCreation"/>
           <include name="browserLaunch"/>
           <include name="createExtentTest"/>
           <include name="generateExtentReports"/>
-          <include name="TC_011_TemplateCreation"/>
           <include name="reportInitialisation"/>
+          <include name="fileSetup"/>
         </methods>
-      </class> <!-- test.TemplateCreationTest -->
+      </class> <!-- test.DriveCreationTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

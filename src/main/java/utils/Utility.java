@@ -1,9 +1,12 @@
 package utils;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Date;
+import java.util.Properties;
+import java.util.Random;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -89,10 +92,33 @@ public class Utility {
 		return path;
 	}
 	
+	//Public method to generate random test name for test creation
+	public static String randomTestName() {
+		String testName = "Test" + "-" + randomTestDuration();
+		return testName;
+	}
+	
+	//Public method to get random two digit number for Objective duration
+	public static String randomTestDuration() {
+		int min = 10, max = 120;
+		Random random = new Random();
+		int num = random.nextInt((max-min) + 1) + min;
+		String strNum = Integer.toString(num);
+		return strNum;
+	}
+	
+	//Public method to get the value of global properites from property file
+	public static String getPropertyValue(String propKey) throws IOException {
+		Properties prop = new Properties();
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/test/java/testResources/GlobalData.properties");
+		prop.load(fis);
+		return prop.getProperty(propKey);
+	}
+	
 	// Public method to read data from Excel file
 	public String[][] readExcel(String excelfile, String sheetname) throws IOException {
 
-		XSSFWorkbook book = new XSSFWorkbook("/Users/maginthangr/eclipse-workspace/HyreNet.com/src/test/resources/" + excelfile + ".xlsx");
+		XSSFWorkbook book = new XSSFWorkbook(System.getProperty("user.dir")+"/src/test/java/testResources/" + excelfile + ".xlsx");
 		XSSFSheet sheet = book.getSheet(sheetname);
 
 		// Getting the row count and column count
@@ -150,7 +176,7 @@ public class Utility {
 	// Public method to find an element by xpath and enter text
 	public void waitforWebElementToBeVisible(WebElement attributevalue) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement ele = wait.until(ExpectedConditions.visibilityOf(attributevalue));
+		wait.until(ExpectedConditions.visibilityOf(attributevalue));
 	}
-	
+
 }

@@ -59,7 +59,7 @@ public class SignUpTest extends ProjectSpecificationMethod{
 				filePath = takeScreenshot(testCase_ID);
 				// Calling method the to capture screenshot from path
 				extentTest.addScreenCaptureFromPath(filePath, testCase_ID);
-				extentTest.fail("The user SignUp test case " + testCase_ID + " failed");
+				extentTest.fail("The user SignUp test case " + testCase_ID + " failed due to exception"+ e.getMessage());
 				e.printStackTrace();
 			}
 		}else if(testCase_ID.equals("TC_009_SignUpTest")) {
@@ -90,7 +90,7 @@ public class SignUpTest extends ProjectSpecificationMethod{
 				filePath = takeScreenshot(testCase_ID);
 				// Calling method the to capture screenshot from path
 				extentTest.addScreenCaptureFromPath(filePath, testCase_ID);
-				extentTest.fail("The user SignUp test case " + testCase_ID + " failed");
+				extentTest.fail("The user SignUp test case " + testCase_ID + " failed due to exception"+ e.getMessage());
 				e.printStackTrace();
 			}
 		}else {
@@ -121,7 +121,7 @@ public class SignUpTest extends ProjectSpecificationMethod{
 				filePath = takeScreenshot(testCase_ID);
 				// Calling method the to capture screenshot from path
 				extentTest.addScreenCaptureFromPath(filePath, testCase_ID);
-				extentTest.fail("The user SignUp test case " + testCase_ID + " failed");
+				extentTest.fail("The user SignUp test case " + testCase_ID + " failed due to exception"+ e.getMessage());
 				e.printStackTrace();
 			}
 		}

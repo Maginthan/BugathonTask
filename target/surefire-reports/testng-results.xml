@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-17T21:06:13 IST" name="Suite" finished-at="2024-08-17T21:06:22 IST" duration-ms="9523">
+  <suite started-at="2024-08-19T15:38:42 IST" name="Suite" finished-at="2024-08-19T15:41:38 IST" duration-ms="175837">
     <groups>
     </groups>
-    <test started-at="2024-08-17T21:06:13 IST" name="Test" finished-at="2024-08-17T21:06:22 IST" duration-ms="9523">
-      <class name="test.BrokenURLValidationTest">
-        <test-method is-config="true" signature="reportInitialisation()[pri:0, instance:test.BrokenURLValidationTest@48f278eb]" started-at="2024-08-17T21:06:12 IST" name="reportInitialisation" finished-at="2024-08-17T21:06:13 IST" duration-ms="279" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportInitialisation -->
-        <test-method is-config="true" signature="fileSetup()[pri:0, instance:test.BrokenURLValidationTest@48f278eb]" started-at="2024-08-17T21:06:13 IST" name="fileSetup" finished-at="2024-08-17T21:06:13 IST" duration-ms="0" status="PASS">
+    <test started-at="2024-08-19T15:38:42 IST" name="Test" finished-at="2024-08-19T15:41:38 IST" duration-ms="175837">
+      <class name="test.SignUpTest">
+        <test-method is-config="true" signature="fileSetup()[pri:0, instance:test.SignUpTest@5b03b9fe]" started-at="2024-08-19T15:38:42 IST" name="fileSetup" finished-at="2024-08-19T15:38:42 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fileSetup -->
-        <test-method is-config="true" signature="createExtentTest()[pri:0, instance:test.BrokenURLValidationTest@48f278eb]" started-at="2024-08-17T21:06:13 IST" name="createExtentTest" finished-at="2024-08-17T21:06:13 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="createExtentTest()[pri:0, instance:test.SignUpTest@5b03b9fe]" started-at="2024-08-19T15:39:59 IST" name="createExtentTest" finished-at="2024-08-19T15:39:59 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.BrokenURLValidationTest@48f278eb]" started-at="2024-08-17T21:06:13 IST" name="browserLaunch" finished-at="2024-08-17T21:06:21 IST" duration-ms="8636" status="PASS">
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.SignUpTest@5b03b9fe]" started-at="2024-08-19T15:39:59 IST" name="browserLaunch" finished-at="2024-08-19T15:40:09 IST" duration-ms="9733" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,7 +31,231 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunch -->
-        <test-method signature="TC_001_URLValidation(java.lang.String)[pri:0, instance:test.BrokenURLValidationTest@48f278eb]" started-at="2024-08-17T21:06:21 IST" name="TC_001_URLValidation" finished-at="2024-08-17T21:06:22 IST" duration-ms="649" status="PASS">
+        <test-method signature="TS_004_SignUpTest(java.lang.String,java.lang.String)[pri:0, instance:test.SignUpTest@5b03b9fe]" started-at="2024-08-19T15:40:09 IST" name="TS_004_SignUpTest" data-provider="ReadfromExcel" finished-at="2024-08-19T15:40:10 IST" duration-ms="951" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Maiidf@iir]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TC_008_SignUpTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TS_004_SignUpTest -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.SignUpTest@5b03b9fe]" started-at="2024-08-19T15:40:10 IST" name="browserClose" finished-at="2024-08-19T15:40:10 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.SignUpTest@5b03b9fe]" started-at="2024-08-19T15:40:10 IST" name="browserLaunch" finished-at="2024-08-19T15:40:20 IST" duration-ms="9460" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://app.hyrenet.in/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="TS_004_SignUpTest(java.lang.String,java.lang.String)[pri:0, instance:test.SignUpTest@5b03b9fe]" started-at="2024-08-19T15:40:20 IST" name="TS_004_SignUpTest" data-provider="ReadfromExcel" finished-at="2024-08-19T15:40:21 IST" duration-ms="780" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Maginthanofficial1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TC_009_SignUpTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TS_004_SignUpTest -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.SignUpTest@5b03b9fe]" started-at="2024-08-19T15:40:21 IST" name="browserClose" finished-at="2024-08-19T15:40:21 IST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.SignUpTest@5b03b9fe]" started-at="2024-08-19T15:40:21 IST" name="browserLaunch" finished-at="2024-08-19T15:40:30 IST" duration-ms="9696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://app.hyrenet.in/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="TS_004_SignUpTest(java.lang.String,java.lang.String)[pri:0, instance:test.SignUpTest@5b03b9fe]" started-at="2024-08-19T15:40:30 IST" name="TS_004_SignUpTest" data-provider="ReadfromExcel" finished-at="2024-08-19T15:40:31 IST" duration-ms="845" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TC_010_SignUpTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TS_004_SignUpTest -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.SignUpTest@5b03b9fe]" started-at="2024-08-19T15:40:31 IST" name="browserClose" finished-at="2024-08-19T15:40:32 IST" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- test.SignUpTest -->
+      <class name="test.UpadateEndPageTest">
+        <test-method is-config="true" signature="fileSetup()[pri:0, instance:test.UpadateEndPageTest@2805d709]" started-at="2024-08-19T15:38:42 IST" name="fileSetup" finished-at="2024-08-19T15:38:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileSetup -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.UpadateEndPageTest@2805d709]" started-at="2024-08-19T15:41:26 IST" name="browserLaunch" finished-at="2024-08-19T15:41:35 IST" duration-ms="8767" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://app.hyrenet.in/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method is-config="true" signature="createExtentTest()[pri:0, instance:test.UpadateEndPageTest@2805d709]" started-at="2024-08-19T15:41:26 IST" name="createExtentTest" finished-at="2024-08-19T15:41:26 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentTest -->
+        <test-method signature="TC_014_UpadateEndPageDetails()[pri:0, instance:test.UpadateEndPageTest@2805d709]" started-at="2024-08-19T15:41:35 IST" name="TC_014_UpadateEndPageDetails" finished-at="2024-08-19T15:41:38 IST" duration-ms="3077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_014_UpadateEndPageDetails -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.UpadateEndPageTest@2805d709]" started-at="2024-08-19T15:41:38 IST" name="browserClose" finished-at="2024-08-19T15:41:38 IST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- test.UpadateEndPageTest -->
+      <class name="test.QlibraryTest">
+        <test-method is-config="true" signature="fileSetup()[pri:0, instance:test.QlibraryTest@6e0f5f7f]" started-at="2024-08-19T15:38:42 IST" name="fileSetup" finished-at="2024-08-19T15:38:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileSetup -->
+        <test-method is-config="true" signature="createExtentTest()[pri:0, instance:test.QlibraryTest@6e0f5f7f]" started-at="2024-08-19T15:41:06 IST" name="createExtentTest" finished-at="2024-08-19T15:41:06 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentTest -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.QlibraryTest@6e0f5f7f]" started-at="2024-08-19T15:41:06 IST" name="browserLaunch" finished-at="2024-08-19T15:41:15 IST" duration-ms="9221" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://app.hyrenet.in/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="TC_013_AddNewQuestion()[pri:0, instance:test.QlibraryTest@6e0f5f7f]" started-at="2024-08-19T15:41:15 IST" name="TC_013_AddNewQuestion" finished-at="2024-08-19T15:41:26 IST" duration-ms="10680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_013_AddNewQuestion -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.QlibraryTest@6e0f5f7f]" started-at="2024-08-19T15:41:26 IST" name="browserClose" finished-at="2024-08-19T15:41:26 IST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- test.QlibraryTest -->
+      <class name="test.TemplateCreationTest">
+        <test-method is-config="true" signature="fileSetup()[pri:0, instance:test.TemplateCreationTest@37d4349f]" started-at="2024-08-19T15:38:42 IST" name="fileSetup" finished-at="2024-08-19T15:38:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileSetup -->
+        <test-method is-config="true" signature="createExtentTest()[pri:0, instance:test.TemplateCreationTest@37d4349f]" started-at="2024-08-19T15:40:32 IST" name="createExtentTest" finished-at="2024-08-19T15:40:32 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentTest -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.TemplateCreationTest@37d4349f]" started-at="2024-08-19T15:40:32 IST" name="browserLaunch" finished-at="2024-08-19T15:40:41 IST" duration-ms="9181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://app.hyrenet.in/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="TC_011_TemplateCreation()[pri:0, instance:test.TemplateCreationTest@37d4349f]" started-at="2024-08-19T15:40:41 IST" name="TC_011_TemplateCreation" finished-at="2024-08-19T15:40:49 IST" duration-ms="8533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_011_TemplateCreation -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.TemplateCreationTest@37d4349f]" started-at="2024-08-19T15:40:49 IST" name="browserClose" finished-at="2024-08-19T15:40:49 IST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- test.TemplateCreationTest -->
+      <class name="test.BrokenURLValidationTest">
+        <test-method is-config="true" signature="reportInitialisation()[pri:0, instance:test.BrokenURLValidationTest@43dac38f]" started-at="2024-08-19T15:38:42 IST" name="reportInitialisation" finished-at="2024-08-19T15:38:42 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportInitialisation -->
+        <test-method is-config="true" signature="fileSetup()[pri:0, instance:test.BrokenURLValidationTest@43dac38f]" started-at="2024-08-19T15:38:42 IST" name="fileSetup" finished-at="2024-08-19T15:38:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileSetup -->
+        <test-method is-config="true" signature="createExtentTest()[pri:0, instance:test.BrokenURLValidationTest@43dac38f]" started-at="2024-08-19T15:38:42 IST" name="createExtentTest" finished-at="2024-08-19T15:38:42 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentTest -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.BrokenURLValidationTest@43dac38f]" started-at="2024-08-19T15:38:42 IST" name="browserLaunch" finished-at="2024-08-19T15:38:51 IST" duration-ms="8817" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://app.hyrenet.in/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="TC_001_URLValidation(java.lang.String)[pri:0, instance:test.BrokenURLValidationTest@43dac38f]" started-at="2024-08-19T15:38:51 IST" name="TC_001_URLValidation" finished-at="2024-08-19T15:38:52 IST" duration-ms="772" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,15 +266,298 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_001_URLValidation -->
-        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.BrokenURLValidationTest@48f278eb]" started-at="2024-08-17T21:06:22 IST" name="browserClose" finished-at="2024-08-17T21:06:22 IST" duration-ms="188" status="PASS">
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.BrokenURLValidationTest@43dac38f]" started-at="2024-08-19T15:38:52 IST" name="browserClose" finished-at="2024-08-19T15:38:52 IST" duration-ms="186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
-        <test-method is-config="true" signature="generateExtentReports()[pri:0, instance:test.BrokenURLValidationTest@48f278eb]" started-at="2024-08-17T21:06:22 IST" name="generateExtentReports" finished-at="2024-08-17T21:06:23 IST" duration-ms="462" status="PASS">
+        <test-method is-config="true" signature="generateExtentReports()[pri:0, instance:test.BrokenURLValidationTest@43dac38f]" started-at="2024-08-19T15:41:38 IST" name="generateExtentReports" finished-at="2024-08-19T15:41:39 IST" duration-ms="286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateExtentReports -->
       </class> <!-- test.BrokenURLValidationTest -->
+      <class name="test.DriveCreationTest">
+        <test-method is-config="true" signature="fileSetup()[pri:0, instance:test.DriveCreationTest@434a63ab]" started-at="2024-08-19T15:38:42 IST" name="fileSetup" finished-at="2024-08-19T15:38:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileSetup -->
+        <test-method is-config="true" signature="createExtentTest()[pri:0, instance:test.DriveCreationTest@434a63ab]" started-at="2024-08-19T15:40:49 IST" name="createExtentTest" finished-at="2024-08-19T15:40:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentTest -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.DriveCreationTest@434a63ab]" started-at="2024-08-19T15:40:49 IST" name="browserLaunch" finished-at="2024-08-19T15:40:58 IST" duration-ms="8345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://app.hyrenet.in/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="TC_012_TemplateCreation()[pri:0, instance:test.DriveCreationTest@434a63ab]" started-at="2024-08-19T15:40:58 IST" name="TC_012_TemplateCreation" finished-at="2024-08-19T15:41:06 IST" duration-ms="8220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_012_TemplateCreation -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.DriveCreationTest@434a63ab]" started-at="2024-08-19T15:41:06 IST" name="browserClose" finished-at="2024-08-19T15:41:06 IST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- test.DriveCreationTest -->
+      <class name="test.SignInTest">
+        <test-method is-config="true" signature="fileSetup()[pri:0, instance:test.SignInTest@7c711375]" started-at="2024-08-19T15:38:42 IST" name="fileSetup" finished-at="2024-08-19T15:38:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileSetup -->
+        <test-method is-config="true" signature="createExtentTest()[pri:0, instance:test.SignInTest@7c711375]" started-at="2024-08-19T15:38:52 IST" name="createExtentTest" finished-at="2024-08-19T15:38:52 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentTest -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.SignInTest@7c711375]" started-at="2024-08-19T15:38:53 IST" name="browserLaunch" finished-at="2024-08-19T15:39:03 IST" duration-ms="9779" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://app.hyrenet.in/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="TS_002_SignInTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.SignInTest@7c711375]" started-at="2024-08-19T15:39:03 IST" name="TS_002_SignInTest" data-provider="ReadfromExcel" finished-at="2024-08-19T15:39:05 IST" duration-ms="2082" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hyrenet+bugathon@guvi.in]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hyrenettest@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TC_002_SignInTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TS_002_SignInTest -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.SignInTest@7c711375]" started-at="2024-08-19T15:39:05 IST" name="browserClose" finished-at="2024-08-19T15:39:05 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.SignInTest@7c711375]" started-at="2024-08-19T15:39:05 IST" name="browserLaunch" finished-at="2024-08-19T15:39:14 IST" duration-ms="8905" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://app.hyrenet.in/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="TS_002_SignInTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.SignInTest@7c711375]" started-at="2024-08-19T15:39:14 IST" name="TS_002_SignInTest" data-provider="ReadfromExcel" finished-at="2024-08-19T15:39:15 IST" duration-ms="820" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hyrenet+bugathon@guvi.in]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hyrenettest@12456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TC_003_SignInTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TS_002_SignInTest -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.SignInTest@7c711375]" started-at="2024-08-19T15:39:15 IST" name="browserClose" finished-at="2024-08-19T15:39:15 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.SignInTest@7c711375]" started-at="2024-08-19T15:39:15 IST" name="browserLaunch" finished-at="2024-08-19T15:39:25 IST" duration-ms="10541" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://app.hyrenet.in/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="TS_002_SignInTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.SignInTest@7c711375]" started-at="2024-08-19T15:39:25 IST" name="TS_002_SignInTest" data-provider="ReadfromExcel" finished-at="2024-08-19T15:39:26 IST" duration-ms="736" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hyrenet+bugathoner@guvi.in]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hyrenettest@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TC_004_SignInTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TS_002_SignInTest -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.SignInTest@7c711375]" started-at="2024-08-19T15:39:26 IST" name="browserClose" finished-at="2024-08-19T15:39:26 IST" duration-ms="348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.SignInTest@7c711375]" started-at="2024-08-19T15:39:26 IST" name="browserLaunch" finished-at="2024-08-19T15:39:38 IST" duration-ms="11084" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://app.hyrenet.in/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="TS_002_SignInTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.SignInTest@7c711375]" started-at="2024-08-19T15:39:38 IST" name="TS_002_SignInTest" data-provider="ReadfromExcel" finished-at="2024-08-19T15:39:38 IST" duration-ms="744" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hyrenet+bugathoner@guvi.in]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hyrenettest@12456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TC_005_SignInTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TS_002_SignInTest -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.SignInTest@7c711375]" started-at="2024-08-19T15:39:38 IST" name="browserClose" finished-at="2024-08-19T15:39:39 IST" duration-ms="357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.SignInTest@7c711375]" started-at="2024-08-19T15:39:39 IST" name="browserLaunch" finished-at="2024-08-19T15:39:48 IST" duration-ms="9569" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://app.hyrenet.in/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="TS_002_SignInTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.SignInTest@7c711375]" started-at="2024-08-19T15:39:48 IST" name="TS_002_SignInTest" data-provider="ReadfromExcel" finished-at="2024-08-19T15:39:49 IST" duration-ms="305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TC_006_SignInTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TS_002_SignInTest -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.SignInTest@7c711375]" started-at="2024-08-19T15:39:49 IST" name="browserClose" finished-at="2024-08-19T15:39:49 IST" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- test.SignInTest -->
+      <class name="test.LogoutTest">
+        <test-method is-config="true" signature="fileSetup()[pri:0, instance:test.LogoutTest@57cf54e1]" started-at="2024-08-19T15:38:42 IST" name="fileSetup" finished-at="2024-08-19T15:38:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileSetup -->
+        <test-method is-config="true" signature="createExtentTest()[pri:0, instance:test.LogoutTest@57cf54e1]" started-at="2024-08-19T15:39:49 IST" name="createExtentTest" finished-at="2024-08-19T15:39:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentTest -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.LogoutTest@57cf54e1]" started-at="2024-08-19T15:39:49 IST" name="browserLaunch" finished-at="2024-08-19T15:39:56 IST" duration-ms="7138" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://app.hyrenet.in/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="TC_008_SignUnTest()[pri:0, instance:test.LogoutTest@57cf54e1]" started-at="2024-08-19T15:39:56 IST" name="TC_008_SignUnTest" finished-at="2024-08-19T15:39:59 IST" duration-ms="3371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_008_SignUnTest -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.LogoutTest@57cf54e1]" started-at="2024-08-19T15:39:59 IST" name="browserClose" finished-at="2024-08-19T15:39:59 IST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- test.LogoutTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

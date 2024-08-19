@@ -3,6 +3,13 @@
   <groupId>HyreNet.com</groupId>
   <artifactId>HyreNet.com</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+   <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source> 
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  
   	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
@@ -50,7 +57,7 @@
 					<version>3.0.0-M5</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>testngSample.xml</suiteXmlFile>
+							<suiteXmlFile>testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>

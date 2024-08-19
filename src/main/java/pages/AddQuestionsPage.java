@@ -2,8 +2,6 @@ package pages;
 
 
 import java.util.List;
-import java.util.Optional;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -57,7 +55,7 @@ public class AddQuestionsPage extends ProjectSpecificationMethod{
 		return this;
 	}
 	
-	//public method to close question view
+	//public method to click save and submit button
 	public TemplateCompletionPage saveNsubmit() {
 		click(saveNsubmit);
 		return new TemplateCompletionPage(driver);
