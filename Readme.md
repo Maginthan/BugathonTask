@@ -59,7 +59,7 @@ The reason behind creating this framework is to automate the main modules of Hyr
 - Update Test End page details
 
 ## Jenkins success build run screenshot:
-<p align="Left"><img src="Test result screenshots/Genkins_Build_Report.png" alt="screenshot" width="600"></p>
+<p align="Left"><img src="ReadMeImages/HyreNetJenkins.png" alt="screenshot" width="600"></p>
 
 ## People worked on this project
 ```Maginthan```
