@@ -48,7 +48,7 @@ public class ProjectSpecificationMethod extends Utility{
 	// Public method to close browser
 	@AfterMethod
 	public void browserClose() {
-		closeBrowser();
+		//closeBrowser();
 	}
 	
 	//public method to create Extend test

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-19T15:00:49 IST" name="Suite" finished-at="2024-08-19T15:01:06 IST" duration-ms="16229">
+  <suite started-at="2024-08-20T19:00:33 IST" name="Suite" finished-at="2024-08-20T19:01:07 IST" duration-ms="34922">
     <groups>
     </groups>
-    <test started-at="2024-08-19T15:00:49 IST" name="Test" finished-at="2024-08-19T15:01:06 IST" duration-ms="16229">
-      <class name="test.UpadateEndPageTest">
-        <test-method is-config="true" signature="reportInitialisation()[pri:0, instance:test.UpadateEndPageTest@15043a2f]" started-at="2024-08-19T15:00:49 IST" name="reportInitialisation" finished-at="2024-08-19T15:00:49 IST" duration-ms="244" status="PASS">
+    <test started-at="2024-08-20T19:00:33 IST" name="Test" finished-at="2024-08-20T19:01:07 IST" duration-ms="34922">
+      <class name="test.UserNameUpdateTest">
+        <test-method is-config="true" signature="reportInitialisation()[pri:0, instance:test.UserNameUpdateTest@7f485fda]" started-at="2024-08-20T19:00:32 IST" name="reportInitialisation" finished-at="2024-08-20T19:00:33 IST" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportInitialisation -->
-        <test-method is-config="true" signature="fileSetup()[pri:0, instance:test.UpadateEndPageTest@15043a2f]" started-at="2024-08-19T15:00:49 IST" name="fileSetup" finished-at="2024-08-19T15:00:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="fileSetup()[pri:0, instance:test.UserNameUpdateTest@7f485fda]" started-at="2024-08-20T19:00:33 IST" name="fileSetup" finished-at="2024-08-20T19:00:33 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fileSetup -->
-        <test-method is-config="true" signature="createExtentTest()[pri:0, instance:test.UpadateEndPageTest@15043a2f]" started-at="2024-08-19T15:00:49 IST" name="createExtentTest" finished-at="2024-08-19T15:00:49 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="createExtentTest()[pri:0, instance:test.UserNameUpdateTest@7f485fda]" started-at="2024-08-20T19:00:33 IST" name="createExtentTest" finished-at="2024-08-20T19:00:33 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.UpadateEndPageTest@15043a2f]" started-at="2024-08-19T15:00:49 IST" name="browserLaunch" finished-at="2024-08-19T15:01:01 IST" duration-ms="12021" status="PASS">
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.UserNameUpdateTest@7f485fda]" started-at="2024-08-20T19:00:33 IST" name="browserLaunch" finished-at="2024-08-20T19:00:44 IST" duration-ms="11840" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,19 +35,53 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunch -->
-        <test-method signature="TC_014_UpadateEndPageDetails()[pri:0, instance:test.UpadateEndPageTest@15043a2f]" started-at="2024-08-19T15:01:01 IST" name="TC_014_UpadateEndPageDetails" finished-at="2024-08-19T15:01:06 IST" duration-ms="4172" status="PASS">
+        <test-method signature="TC_015_UpadateUserName()[pri:0, instance:test.UserNameUpdateTest@7f485fda]" started-at="2024-08-20T19:00:44 IST" name="TC_015_UpadateUserName" finished-at="2024-08-20T19:00:52 IST" duration-ms="7231" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_014_UpadateEndPageDetails -->
-        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.UpadateEndPageTest@15043a2f]" started-at="2024-08-19T15:01:06 IST" name="browserClose" finished-at="2024-08-19T15:01:06 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- TC_015_UpadateUserName -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.UserNameUpdateTest@7f485fda]" started-at="2024-08-20T19:00:52 IST" name="browserClose" finished-at="2024-08-20T19:00:52 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
-        <test-method is-config="true" signature="generateExtentReports()[pri:0, instance:test.UpadateEndPageTest@15043a2f]" started-at="2024-08-19T15:01:06 IST" name="generateExtentReports" finished-at="2024-08-19T15:01:06 IST" duration-ms="251" status="PASS">
+        <test-method is-config="true" signature="generateExtentReports()[pri:0, instance:test.UserNameUpdateTest@7f485fda]" started-at="2024-08-20T19:01:08 IST" name="generateExtentReports" finished-at="2024-08-20T19:01:08 IST" duration-ms="287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateExtentReports -->
-      </class> <!-- test.UpadateEndPageTest -->
+      </class> <!-- test.UserNameUpdateTest -->
+      <class name="test.LogoutTest">
+        <test-method is-config="true" signature="fileSetup()[pri:0, instance:test.LogoutTest@72cc7e6f]" started-at="2024-08-20T19:00:33 IST" name="fileSetup" finished-at="2024-08-20T19:00:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileSetup -->
+        <test-method is-config="true" signature="createExtentTest()[pri:0, instance:test.LogoutTest@72cc7e6f]" started-at="2024-08-20T19:00:52 IST" name="createExtentTest" finished-at="2024-08-20T19:00:52 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentTest -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:test.LogoutTest@72cc7e6f]" started-at="2024-08-20T19:00:52 IST" name="browserLaunch" finished-at="2024-08-20T19:01:02 IST" duration-ms="10111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://app.hyrenet.in/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="TC_008_SignUnTest()[pri:0, instance:test.LogoutTest@72cc7e6f]" started-at="2024-08-20T19:01:02 IST" name="TC_008_SignUnTest" finished-at="2024-08-20T19:01:07 IST" duration-ms="5694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_008_SignUnTest -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:test.LogoutTest@72cc7e6f]" started-at="2024-08-20T19:01:07 IST" name="browserClose" finished-at="2024-08-20T19:01:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- test.LogoutTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

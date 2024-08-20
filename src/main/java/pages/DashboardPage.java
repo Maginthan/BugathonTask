@@ -36,7 +36,7 @@ public class DashboardPage extends ProjectSpecificationMethod {
 	public SettingsPage settingsModule() {
 		isElementEnabled(settingsModule);
 		click(settingsModule);
-		return new SettingsPage();
+		return new SettingsPage(driver);
 	}
 
 	// Public method to select template module
@@ -66,4 +66,5 @@ public class DashboardPage extends ProjectSpecificationMethod {
 		click(pagesModule);
 		return new TestEndPage(driver);
 	}
+	
 }

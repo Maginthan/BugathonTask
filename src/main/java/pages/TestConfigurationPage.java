@@ -35,6 +35,8 @@ public class TestConfigurationPage extends ProjectSpecificationMethod{
 	
 	//Public method to enter test configuration details of test name
 	public TestConfigurationPage testName() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(testName));
 		testName.sendKeys(randomTestName());
 		return this;
 	}

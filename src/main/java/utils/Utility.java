@@ -14,6 +14,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -42,8 +43,11 @@ public class Utility {
 	public String testAuthor;
 	public String testCategory;
 	
-	//Public instance used for capturing the failed test case screenshot file path
+	// Public instance used for capturing the failed test case screenshot file path
 	public String filePath;
+	
+	// Public instance of user name used for update user name scenario
+	public String updatedUserName;
 	
 	// Public method to launch browser and load url
 	public void launchBrowser(String browser, String url) {
@@ -113,6 +117,43 @@ public class Utility {
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/test/java/testResources/GlobalData.properties");
 		prop.load(fis);
 		return prop.getProperty(propKey);
+	}
+	
+	//Public method to generate random user name
+	public static String randomUserName() {
+		// Creating string of all characters
+		String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		// Creating random string builder
+		StringBuilder sb = new StringBuilder();
+
+		// creating an object of random class
+		Random random = new Random();
+		// Specifying the length of random string
+		int length = 7;
+
+		for (int i = 0; i < length; i++) {
+			// Generating random index number
+			int index = random.nextInt(alphabet.length());
+
+			// Getting the character based on the specified index
+			char randomChar = alphabet.charAt(index);
+
+			// Appending the character to string builder
+			sb.append(randomChar);
+
+		}
+		String name = sb.toString();
+		System.out.println("The random string is " + name);
+		return name;
+	}
+	
+	//Public method to clear text field inside a web element
+	public static void clearTextfield(WebElement ele) {
+		String input = ele.getAttribute("value");
+			for(int i=0; i<input.length(); i++) {
+				ele.sendKeys(Keys.BACK_SPACE);
+			}
+	
 	}
 	
 	// Public method to read data from Excel file

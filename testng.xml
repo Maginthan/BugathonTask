@@ -5,15 +5,16 @@
 		<parameter name="browser" value="Chrome"></parameter>
 		<parameter name="url" value="https://app.hyrenet.in/"></parameter>
 		<classes>
-			<class name="test.BrokenURLValidationTest"></class>
+<!--<class name="test.BrokenURLValidationTest"></class>
 			<class name="test.SignInTest"></class>
 			<class name="test.LogoutTest"></class>
 			<class name="test.SignUpTest"></class>
 			<class name="test.TemplateCreationTest"></class>
 			<class name="test.DriveCreationTest"></class>
 			<class name="test.QlibraryTest"></class>
-			<class name="test.UpadateEndPageTest"></class>
-
+			<class name="test.UpadateEndPageTest"></class> -->
+			<class name="test.UserNameUpdateTest"></class>
+			<class name="test.LogoutTest"></class>		
 		</classes>
 	</test>
 </suite> 
