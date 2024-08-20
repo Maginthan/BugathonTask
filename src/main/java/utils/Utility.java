@@ -143,7 +143,7 @@ public class Utility {
 
 		}
 		String name = sb.toString();
-		System.out.println("The random string is " + name);
+		//System.out.println("The random string is " + name);
 		return name;
 	}
 	
